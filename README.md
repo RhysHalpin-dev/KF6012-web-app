@@ -1,4 +1,4 @@
-# Kf6012 Web App
+# Kf6012 Web App   
 
 THIS PROJECT WAS CREATED FOR SUBMISSION TO NORTHUMBRIA UNIVERSITY.
 
@@ -15,3 +15,5 @@ A Web app used to present information about a academic conference consisting of 
 * PHP
 * React 
 * SQLite
+* 
+# Copyright 2021 RHYS HALPIN
