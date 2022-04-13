@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.App {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #DCDCDC;
+}
+nav {
+  margin-left: auto;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+table {
+  margin: auto;
+  width: 80%;
+  border: 1px solid black;
+  table-layout: auto;
+  border-radius: 10px;
+}
+th {
+  background-color: #111;
+  color: white;
+}
+
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+.th1{
+  border-radius: 10px 0 0 0;
+}
+.th7{
+  border-radius: 0 10px 0 0;
+}
+
+.td1{
+  border-radius: 0 0 0 10px;
+}
+
+.td7{
+  border-radius: 0 0 10px 0;
+}
+.selected {
+  background-color: #D64933;
+}
+
+.updateButton {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.flex-item {
+  padding: 2.5%;
+  text-align: center;
+  border-radius: 5%;
+  max-width: 25%;
+  display: inline-block;
+  border-style: solid;
+  background-color:"";
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1 0 21%;
+}
+.flex-item h2 {
+  font-size: 1.5vw;
+}
+
+.flex-item textarea {
+  text-align: center;
+  max-width: auto;
+  min-width: auto;
+}
+nav li a:hover {
+  background-color: #D64933;
+}
+
+.grid-container {
+  border: 1px solid  #111;
+  display: grid;
+  border-radius: 10px;
+  
+  margin: auto;
+  width: 80%;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 2px 2px;
+  padding: 0.1%;
+  grid-template-areas:
+    "r1Head r2Head r3Head r4Head"
+    "r1C r2C r3C r4C"
+    ". . . ."
+    ". . . .";
+}
+
+.r1Head {
+  grid-area: r1Head;
+  background-color: #D64933;
+  border-radius: 10px 0 0 0;
+  color: white;
+  border: 1px solid  #111;
+  font-weight: bold;
+  
+}
+
+.r2Head {
+  grid-area: r2Head;
+  background-color:  #D64933;
+  color: white;
+  border: 1px solid #111;
+  font-weight: bold;
+}
+
+.r3Head {
+  grid-area: r3Head;
+  background-color:  #D64933;
+  color: white;
+  border: 1px solid  #111;
+  font-weight: bold;
+}
+
+.r4Head {
+  grid-area: r4Head;
+  background-color:  #D64933;
+  border-radius: 0 10px 0 0;
+  color: white;
+  border: 1px solid  #111;
+  font-weight: bold;
+}
+
+.r1C {
+  grid-area: r1C;
+  border: 1px solid  #111;
+  border-radius: 0 0 0 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.r2C {
+  grid-area: r2C;
+  border: 1px solid  #111;
+  
+
+}
+
+.r3C {
+  grid-area: r3C;
+  border: 1px solid  #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.r4C {
+  grid-area: r4C;
+  border: 1px solid #111;
+  border-radius: 0 0 10px 0;
+  
+
+}
+#sessionsContent {
+  margin: 0 auto;
+  padding: 0.5%;
+}
+
+@media screen and (max-width: 700px) {
+  nav li {
+    text-align: center;
+    float: none;
+  }
+
+  .flex-container {
+    display: flex; /* or inline-flex */
+    flex-direction: column;
+    text-align: center;
+  }
+  .flex-item {
+    padding: 10%;
+    text-align: center;
+    max-width: 100%;
+  }
+  .flex-item h2 {
+    font-size: 3vw;
+  }
+  .flex-item textarea {
+    text-align: center;
+    max-width: auto;
+    min-width: auto;
+  }
+
+  th,
+  td {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 4vw;
+    table-layout: auto;
+  }
+
+  .grid-container {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 1px 1px;
+  }
+
+
+  .r1Head {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color:  #D64933;
+    color: white;
+    border: 1px solid  #111;
+  }
+
+  .r2Head {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color:  #D64933;
+    color: white;
+    border: 1px solid  #111;
+  }
+
+  .r3Head {
+    grid-area: 3 / 1 / 4 / 2;
+    background-color:  #D64933;
+    color: white;
+    border: 1px solid  #111;
+  }
+
+  .r4Head {
+    grid-area: 4 / 1 / 5 / 2;
+    background-color:  #D64933;
+    color: white;
+    border: 1px solid  #111;
+    border-radius: 0 10px 0;
+  }
+
+  .r1C {
+    grid-area: 1 / 2 / 2 / 3;
+    border: 1px solid  #111;
+    border-radius: 0 10px 0 0;
+  }
+
+  .r2C {
+    grid-area: 2 / 2 / 3 / 3;
+    border: 1px solid  #111;
+  }
+
+  .r3C {
+    grid-area: 3 / 2 / 4 / 3;
+    border: 1px solid  #111;
+  }
+
+  .r4C {
+    grid-area: 4 / 2 / 5 / 3;
+    border: 1px solid #111;
+    
+  }
+
+  /* For presentation only, no need to copy the code below */
+  .grid-container * {
+    position: relative;
+  }
+
+  #sessionsContent {
+    margin: 0 auto;
+    padding: 2%;
+  }
+}
